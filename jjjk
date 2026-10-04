@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Night Shift</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- START MENU -->
+
+    <div id="menu" class="screen">
+
+        <h1>NIGHT SHIFT</h1>
+
+        <p class="subtitle">A survival security game</p>
+
+        <button id="startButton">START NIGHT</button>
+
+        <p class="instructions">
+
+            Survive until 6 AM.<br>
+
+            Watch the cameras and conserve your power.
+
+        </p>
+
+    </div>
+
+    <!-- GAME -->
+
+    <div id="game" class="hidden">
+
+        <div id="hud">
+
+            <div id="time">12 AM</div>
+
+            <div id="power">Power: 100%</div>
+
+        </div>
+
+        <!-- OFFICE -->
+
+        <div id="office">
+
+            <div id="leftWall"></div>
+
+            <div id="rightWall"></div>
+
+            <div id="desk">
+
+                <div class="monitor"></div>
+
+            </div>
+
+            <div id="leftDoor" class="door">
+
+                <div class="doorLabel">LEFT DOOR</div>
+
+            </div>
+
+            <div id="rightDoor" class="door">
+
+                <div class="doorLabel">RIGHT DOOR</div>
+
+            </div>
+
+            <div id="monsterWarning"></div>
+
+        </div>
+
+        <!-- CONTROLS -->
+
+        <div id="controls">
+
+            <button id="leftLight">LEFT LIGHT</button>
+
+            <button id="leftDoorButton">LEFT DOOR</button>
+
+            <button id="cameraButton">CAMERAS</button>
+
+            <button id="rightDoorButton">RIGHT DOOR</button>
+
+            <button id="rightLight">RIGHT LIGHT</button>
+
+        </div>
+
+        <!-- CAMERA SYSTEM -->
+
+        <div id="cameraSystem" class="hidden">
+
+            <div class="cameraHeader">
+
+                <span>SECURITY CAMERAS</span>
+
+                <button id="closeCameras">CLOSE</button>
+
+            </div>
+
+            <div id="cameraView">
+
+                <div id="static"></div>
+
+                <div id="cameraMonster" class="monster hidden">
+
+                    <div class="monsterHead">
+
+                        <div class="eye leftEye"></div>
+
+                        <div class="eye rightEye"></div>
+
+                        <div class="mouth"></div>
+
+                    </div>
+
+                    <div class="monsterBody"></div>
+
+                </div>
+
+                <div id="cameraText">CAM 1 - STAGE</div>
+
+            </div>
+
+            <div id="cameraButtons">
+
+                <button data-camera="1">CAM 1</button>
+
+                <button data-camera="2">CAM 2</button>
+
+                <button data-camera="3">CAM 3</button>
+
+                <button data-camera="4">CAM 4</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- GAME OVER -->
+
+    <div id="gameOver" class="screen hidden">
+
+        <h1>YOU DIDN'T MAKE IT</h1>
+
+       
